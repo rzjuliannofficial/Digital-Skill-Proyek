@@ -180,10 +180,41 @@ nav ul li a {
     font-weight: 700;
     margin: 16px 0 16px; /* 8px untuk margin atas dan bawah , sedangkan 0 untuk margin kiri dan kanan, dan 16px untuk margin bawah */
 }
-
 .hero-name span {
-    color: var(--primaryIconColorHover);
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 16px 0 16px; /* 8px untuk margin atas dan bawah , sedangkan 0 untuk margin kiri dan kanan, dan 16px untuk margin bawah */
+    background: linear-gradient(90deg, #ff8a00, #e52e71, #00c6ff );
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: hero-name 4s infinite linear;
 }
+
+@keyframes hero-name {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.text {
+    text-transform: uppercase; /* ini itu untuk mengasih efek uppercase */
+    letter-spacing: 8px; /* ini itu untuk mengasih efek spasi antar huruf */
+    color: #28171b;
+    font-weight: 400; /* ini itu untuk mengasih efek bold */
+    font-size: 15px;
+    position: relative; /* ini itu untuk mengasih efek posisi */
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+/* .hero-name span {
+    color: var(--primaryIconColorHover);
+} */
 
 
 .hero-right img{
@@ -202,7 +233,7 @@ nav ul li a {
 
 
 #portfolio{
-    padding: 2rem 1.5rem;
+    padding: 2rem;
     margin: 30px;
     background-color: #EDF7FA;
     border-radius: 25px;
@@ -260,6 +291,106 @@ nav ul li a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
     gap: 3rem;
 } */
+#skills {
+    padding: var(--sectionPadding);
+    background: var(--secondaryBackgroundColor);
+}
+.section-title {
+    padding: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.education {
+    display: flex;
+    gap: 2rem;
+}
+
+.education .line {
+    padding: 0.7rem;
+}
+
+.education .line div {
+    width: 2px;
+    height: 100%;
+    background: var(--borderColor);
+    position: relative;
+}
+
+.education-info p {
+    margin: 0.6rem 0 1.4rem;
+}
+
+.education-years {
+    margin-bottom: 3rem;
+}
+
+/* the dot on the line */
+.education .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--borderColor);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+    
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right ul {
+    line-height: 2rem;
+    padding: 0 irem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */ /* commented out, but consider using it for better layout */
+  }
+  
+  .icon nav {
+    display: flex;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .icon nav ul {
+    display: flex;
+    list-style: none; /* moved here to avoid repeating in li */
+    margin: 0; /* added to reset default margin */
+    padding: 0; /* added to reset default padding */
+
+}
+  
+  .icon nav ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon nav ul li a {
+    display: flex;
+    height: 50%;
+    border-radius: 20%;
+  }
+  
+  .icon p{
+    padding-bottom: 10px;
+  }
+  /* Consider adding a class to the anchor tags to style them, instead of targeting them directly */
+
+
+
+
 
 
 
