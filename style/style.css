@@ -275,16 +275,28 @@ nav ul li a {
 .visit {
     padding-top: 20px;
 }
-.visit a{
+.visit button{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
     padding: 2px 20px;
     color: #fbfbfb;
     border: 2px solid #ffffff;
     background-color: #FF6464;
     border-radius: 25px;
+    cursor: pointer;
+}
+.visit button:hover{
+    background-color: #020202;
+    color: #ffffff;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
 }
 .wrapper:hover > :not(:hover){
     filter: blur(5px);
     opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+
 }
 /* .grid-3 {
     display: grid;
@@ -348,45 +360,49 @@ nav ul li a {
 
 .skills-right ul {
     line-height: 2rem;
-    padding: 0 irem;
+    padding: 0 1rem;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */ /* commented out, but consider using it for better layout */
-  }
-  
-  .icon nav {
-    display: flex;
-    padding: 10px 0 10px 0;
-    box-sizing: border-box;
-    align-items: center;
-  }
-  
-  .icon nav ul {
-    display: flex;
-    list-style: none; /* moved here to avoid repeating in li */
-    margin: 0; /* added to reset default margin */
-    padding: 0; /* added to reset default padding */
+.icon {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 2rem;
 
+}.icon ul{
+    display: flex; 
+    gap: 10px; 
+    list-style: none; 
+    padding: 0;
 }
-  
-  .icon nav ul li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon nav ul li a {
-    display: flex;
-    height: 50%;
-    border-radius: 20%;
-  }
-  
-  .icon p{
-    padding-bottom: 10px;
-  }
-  /* Consider adding a class to the anchor tags to style them, instead of targeting them directly */
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon p{
+    margin-top: 1rem;
+}
+
+.fb:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+.ig:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+.link:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+.twitter:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+}
 
 
 
